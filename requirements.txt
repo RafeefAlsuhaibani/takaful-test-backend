@@ -2,8 +2,23 @@ Django
 djangorestframework
 gunicorn
 whitenoise
+
+# DB + env
 psycopg2-binary
 dj-database-url
-django-cors-headers
 python-dotenv
+
+# CORS
+django-cors-headers
+
+# Auth (you had it)
 djangorestframework-simplejwt
+
+# API docs (your error)
+drf-spectacular
+
+# often used with spectacular to serve UI (optional but useful)
+drf-spectacular-sidecar
+
+# filters (DRF projects usually add this)
+django-filter
