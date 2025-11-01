@@ -11,7 +11,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # --- Core security/debug ---
 SECRET_KEY = "django-insecure-ylhxhdyh410xc-(y&qp*o%dpuzdr)h#&gm_3c=^(#wrb_4nyw3"
 DEBUG = True
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "0.0.0.0",
+    "takaful-test-backend.onrender.com",
+]
+
 
 # --- Custom User Model ---
 AUTH_USER_MODEL = "users.User"
@@ -169,6 +175,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://takaful-test-frontend.vercel.app",
 ]
 # CORS_ALLOW_CREDENTIALS = True  # enable only if you use cookies across origins
 
@@ -178,4 +185,6 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://takaful-test-backend.onrender.com",
+    "https://takaful-test-frontend.vercel.app",
 ]
